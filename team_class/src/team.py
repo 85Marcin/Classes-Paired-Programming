@@ -1,7 +1,7 @@
 class Team:
     def __init__(self, team_name, players, coach):
         self.name = team_name
-        self.players = list(players)
+        self.players = players
         self.coach = coach
         self.points = 0
 
@@ -13,9 +13,9 @@ class Team:
         if result:
             return True
         return False
-
-    def play_game(self, team_won):
-        if team_won:
+        # return player in self.players
+    def play_game(self, game_won):
+        if game_won:
             self.points += 3
         
 
